@@ -21,7 +21,10 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+<<<<<<< HEAD
         'redirect.role' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+=======
+>>>>>>> acdf6dd27a3620108f5856f518dd8a0a926b05f0
     ];
 
     /**
@@ -55,7 +58,10 @@ class Kernel extends HttpKernel
      * @var array<string, class-string|string>
      */
     protected $routeMiddleware = [
+<<<<<<< HEAD
         'role.redirect' => \App\Http\Middleware\RedirectBasedOnRole::class,
+=======
+>>>>>>> acdf6dd27a3620108f5856f518dd8a0a926b05f0
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
@@ -65,7 +71,12 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+<<<<<<< HEAD
     ];
 
 
+=======
+        'role' => \App\Http\Middleware\RoleMiddleware::class, // Middleware para control de roles
+    ];
+>>>>>>> acdf6dd27a3620108f5856f518dd8a0a926b05f0
 }

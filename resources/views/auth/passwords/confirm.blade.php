@@ -14,7 +14,11 @@
                         @csrf
 
                         <div class="row mb-3">
+<<<<<<< HEAD
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+=======
+                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+>>>>>>> acdf6dd27a3620108f5856f518dd8a0a926b05f0
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
